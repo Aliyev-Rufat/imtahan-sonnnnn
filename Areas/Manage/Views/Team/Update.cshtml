@@ -1,0 +1,30 @@
+﻿@using WebApplication15.Models;
+@model Team
+
+<div class="container">
+    <form method="post" enctype="multipart/form-data">
+        <div class="row">
+            <div class="mb-3 col-md-4">
+                <label asp-for="FullName" class="form-label">FullName</label>
+                <input class="form-control" asp-for="FullName">
+                <span asp-validation-for="FullName" style="color:red"></span>
+            </div>
+            <div class="mb-3 col-md-4">
+                <label asp-for="Position" class="form-label">Position</label>
+                <input class="form-control" asp-for="Position">
+                <span asp-validation-for="Position" style="color:red"></span>
+            </div>
+            <div class="mb-3 col-md-4">
+                <label asp-for="Description" class="form-label">Description</label>
+                <input class="form-control" asp-for="Description">
+                <span asp-validation-for="Description" style="color:red"></span>
+            </div>
+            <div class="mb-3 col-md-4">
+                <label asp-for="PhotoFile" class="form-label">PhotoFile</label>
+                <input class="form-control" asp-for="PhotoFile">
+                <span asp-validation-for="PhotoFile" style="color:red"></span>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
